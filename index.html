@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍕 Freddy Fazbear's Pizzeria 🍕</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--- Camera n clock --->
+    <div class="container"> 
+        <div class="security-camera">
+            <div class="camera-label">CAM 01 - MAIN ENTRANCE</div>
+            <div class="time" id="time">12:00 AM</div>
+    </div>
+ <!-- Front door with freddy aur aur aur --->
+  <div class="door-screen" id="doorScreen">
+    <img src="freddy-sign.png" alt="Freddy Fazbear's Pizzeria" class="neon-sign-img">
+    <p class="subtitle">🍕 Est. 1983 🍕</p>
+  <div class="door-container">
+    <div class="door" id="door">
+    <div class="door-window"></div>
+    <div class="door-handle"></div>
+    <div class="door-sign">CLICK TO ENTER</div>
+    </div>
+  </div>
+  <p class="warning">⚠️We are not responsible for any animatronic malfunctions. Please proceed with caution.⚠️</p>
+    </div>
+<!-- Inside the pizzeria... i sure hope nothing bad happens -->
+ <div class="pizzeria-interior" id="pizzeriaInterior">
+    <h2 class="interior-title"> Welcome to Freddy Fazbear's Pizzeria!</h2>
+    
+    <!--- Balloons!!!!!!!!! --->
+    <div class="balloons">
+        <div class="balloon-red"></div>
+        <div class="balloon-blue"></div>
+        <div class="balloon-green"></div>
+        <div class="balloon-yellow"></div>
+ </div>
+    <!--- The stage for freddy and hte gang >:) --->
+    <div class="stage">
+        <div class="stage-curtains"></div>
+        <div class="animatronics">
+            <!--- Bon Bon aka the best --->
+            <div class="bonnie-animatronic">
+                <img src="bonnie.png" alt="BONNIE" class="animatronic-img">
+                <div class="name-tag">BONNIE</div>
+            </div>
+                <!---Feddy wap --->
+            <div class="freddy-animatronic">
+                <img src="freddy.png" alt="FREDDY" class="animatronic-img">
+                <div class="name-tag">FREDDY</div>
+            </div>
+                <!--- Chica the pizza devourer --->
+            <div class="chica-animatronic">
+                <img src="chica.png" alt="CHICA" class="animatronic-img">
+                <div class="name-tag">CHICA</div>
+            </div>
+        </div>
+        <div class="stage-lights"></div>
+    </div>
+        <!--- my poor attempt at party tables --->
+          <div class="party-tables">
+                <div class="table">
+                    <div class="table-top">
+                        <div class="table-item pizza-slice">🍕</div>
+                        <div class="table-item mini-gift" data-message="2">🎁</div>
+                    </div>
+                    <div class="table-leg"></div>
+                </div>
+                <div class="table">
+                    <div class="table-top">
+                        <div class="table-item pizza-slice">🍕</div>
+                        <div class="table-item mini-gift" data-message="4">🎁</div>
+                    </div>
+                    <div class="table-leg"></div>
+                </div>
+                <div class="table">
+                    <div class="table-top">
+                        <div class="table-item pizza-slice">🍕</div>
+                        <div class="table-item mini-gift" data-message="6">🎁</div>
+                    </div>
+                    <div class="table-leg"></div>
+                </div>
+            </div>
+            <!--- Messages i think i spelt it right --->
+            <div class="message-popup" id="popup2">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closePopup(2)">x</span>
+                    <h3>Message 1</h3>
+                    <p>Soooooo I have a really big crush on you :P</p>
+                </div>
+            </div>
+              <div class="message-popup" id="popup4">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closePopup(4)">x</span>
+                    <h3>Message 2</h3>
+                    <p>I think you're very pretty, and I frickin love your eyes ^-^</p>
+                </div>
+            </div>
+              <div class="message-popup" id="popup6">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closePopup(6)">x</span>
+                    <h3>Message 3</h3>
+                    <p>THE MARIONETTE HAS A GIFT FOR YOU!!!!!</p>
+                </div>
+            </div>
+            <p class="interior-message"> The animatronics are performing just for you...</p>
+            <button class="continue-btn" id="continueBtn">Enter the Party Room!!➜</button>
+            </div>
+          <!--- PARTY ROOM YAYAYAYAYAYAYYAY --->
+          <div class="party-area" id="partyArea">
+            <h2 class="party-title">🎉 Prize Corner 🎉</h2>
+            
+            <div class="marionette-container">
+                <img src="marionette.png" alt="The Marionette" class="marionette-img">
+                <p class="marionette-text">The Marionette has a gift for you...</p>
+            </div>
+            
+            <div class="gift-box" id="giftBox">
+                <div class="gift-lid"></div>
+                <div class="gift-body"></div>
+                <div class="gift-ribbon"></div>
+                <div class="gift-bow"></div>
+                <p class="gift-text">CLICK TO OPEN</p>
+            </div>
+        </div>
+       <!--- The big question >:) --->
+       <div class="question-screen" id="questionScreen">
+            <div class="office-bg">
+                <h2 class="glitch" data-text="You Survived!">You Survived!</h2>
+                <p class="message">You made it through the night...</p>
+                <p class="message">But there's one more question...</p>
+                <p class="big-question">Will you be my Valentine? 💜</p>
+                
+                <div class="buttons">
+                    <button class="btn yes-btn" id="yesBtn">YES YES 🎉</button>
+                    <button class="btn no-btn" id="noBtn">NO... 😰</button>
+                </div>
+                
+                <div class="animatronic-shadow" id="shadow"></div>
+            </div>
+        </div>
+        <!--- CELEBRATEEEEEEEEEEEEEEEEEEEEEEEEEE --->
+         <div class="celebration" id="celebration">
+            <h1 class="celebration-title">🎉 YAYYYYYYYYYYYYYYYYY 🎉</h1>
+            <p class="celebration-message">THANK YOU THANK YOU THANK YOU</p>
+            <p class="celebration-message">You just made this the best night shift ever!!!!</p>
+            <p class="celebration-sub">I'm so excicted to spend Valentine's Day with you ^-^</p>
+            <div class="confetti"></div>
+        </div>
+    </div>
+    <audio id="celebrationSound" src="celebration.mp3"></audio>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>   
+</body>
+</html>
+</html>
